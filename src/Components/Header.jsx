@@ -103,7 +103,7 @@ const Header = () => {
                   <a
                     href={link.href}
                     onClick={toggleMobileMenu}
-                    className={`block py-2 px-3 font-medium uppercase 
+                    className={`block py-2 px-3 font-medium uppercase text-lg
                       ${pathName === link.href ? "active" : "text-[#222929]"} 
                     `}
                   >
@@ -112,7 +112,7 @@ const Header = () => {
                 </li>
               ))}
 
-              <button className="block md:hidden text-lg px-7 2xl:px-10 py-[18px] 2xl:text-xl font-semibold leading-none 2xl:h-[60px] bg-[#0026F2] cursor-pointer text-white rounded-[10px] hover:bg-blue-700 transition-colors shadow-[0px_4px_24px_0px_#0026F226]">
+              <button className="block md:hidden text-lg px-7 mt-4 py-[18px] font-semibold leading-none bg-[#0026F2] cursor-pointer text-white rounded-[10px] hover:bg-blue-700 transition-colors shadow-[0px_4px_24px_0px_#0026F226]">
                 Get Started
               </button>
             </ul>

@@ -32,7 +32,7 @@ const SignUpForm = () => {
           <img
             src="/images/Home/formperson.png"
             alt="Happy person giving thumbs up"
-            className="md:max-w-[370px] lg:max-w-[470px] w-full object-contain relative md:absolute md:-right-6 bottom-0 z-[1]"
+            className="max-w-[488px] md:w-[120%] lg:w-[470px] w-full object-contain relative md:absolute md:-right-6 bottom-0 z-[1]"
           />
           <img
             src="/images/Home/Mask-group.png"
