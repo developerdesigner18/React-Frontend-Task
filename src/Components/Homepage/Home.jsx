@@ -7,17 +7,17 @@ import SignUpForm from "./SignUpForm";
 
 const Home = () => {
   return (
-    <div className="">
+    <div>
       <HeroSection />
       <div className="container">
         <HeadHuntableBanner />
       </div>
 
-      <div className="container !mt-[180px]">
+      <div className="container">
         <MediaSection />
       </div>
 
-      <div className="container !mt-[100px]">
+      <div className="container">
         <MediaSpotlight />
       </div>
 

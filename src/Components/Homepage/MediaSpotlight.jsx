@@ -23,19 +23,22 @@ const MediaSpotlight = () => {
   ];
 
   return (
-    <>
-      <h2 className="text-5xl font-bold leading-[60px] tracking-normal mb-[49px]">
+    <div className="px-4 pb-20 md:pb-[180px]">
+      <h2 className="text-2xl sm:text-4xl lg:text-5xl heading font-bold 2xl:leading-[60px] tracking-normal pb-12">
         Our Founder in the Media Spotlight
       </h2>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+      <div className="flex flex-wrap justify-center md:grid md:grid-cols-3 gap-5 2xl:gap-10">
         {spotlightVideos.map((video) => (
-          <div key={video.id} className="group relative">
-            <div className="relative overflow-hidden w-[520px] h-[320px] rounded-[20px] shadow-lg">
+          <div
+            key={video.id}
+            className="group relative w-full sm:w-[calc(50%-10px)] md:w-full"
+          >
+            <div className="relative overflow-hidden rounded-[20px] shadow-[0px_16px_72px_0px_#0000000D]">
               <img
                 src={video.thumbnail}
                 alt={video.title}
-                className="w-[520px] h-[320px] object-cover"
+                className="aspect-video object-cover"
               />
 
               <div className="absolute inset-0 flex items-center justify-center">
@@ -43,13 +46,13 @@ const MediaSpotlight = () => {
               </div>
             </div>
 
-            <h3 className="mt-5 h-[81px] text-[32px] font-bold leading-10 tracking-normal">
+            <h3 className="pt-5 2xl:pt-10 md:2xl xl:text-3xl 2xl:text-[32px] font-bold 2xl:leading-10 tracking-normal">
               {video.title}
             </h3>
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 

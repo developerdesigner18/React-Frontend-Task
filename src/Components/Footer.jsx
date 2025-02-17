@@ -25,21 +25,21 @@ const Footer = () => {
 
   return (
     <footer className="bg-[#272727] text-gray-300">
-      <div className="container px-4 py-24">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div className="col-span-1 md:col-span-2">
+      <div className="container px-12 md:px-4 py-16 md:py-24">
+        <div className="flex flex-col md:flex-row flex-wrap lg:flex-nowrap justify-between gap-10 md:gap-8">
+          <div className="">
             <div className="flex items-center space-x-[11px]">
               <img
                 src="/images/logo.png"
                 alt="logo"
-                className="w-[42px] h-[46px] brightness-[1000] grayscale"
+                className="h-5 sm:h-9 2xl:h-[46px] object-contain brightness-[1000] grayscale"
               />
-              <span className="text-4xl text-white leading-12">
+              <span className="text-2xl md:text-4xl text-white">
                 <span className="font-medium">Head</span>
                 <span className="font-bold">Huntable</span>
               </span>
             </div>
-            <p className="text-2xl leading-9 tracking-normal font-medium mt-[35px]">
+            <p className="text-base md:text-2xl leading-5 md:leading-9 tracking-normal font-medium mt-4 md:mt-[35px]">
               Take control of your future
               <br />
               and secure your dream job with us.
@@ -48,8 +48,8 @@ const Footer = () => {
 
           {/* Services and Company Links */}
           {Object.values(footerLinks).map((section) => (
-            <div key={section.title} className="col-span-1">
-              <h3 className="text-white text-2xl font-bold leading-10 mb-4">
+            <div key={section.title} className="">
+              <h3 className="text-white text-base md:text-2xl font-bold leading-5 md:leading-10 mb-4">
                 {section.title}
               </h3>
               <ul className="space-y-1">
@@ -57,7 +57,7 @@ const Footer = () => {
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      className="text-xl leading-10 font-semibold text-[#B3B3B3]"
+                      className="text-sm md:text-xl leading-7 md:leading-10 font-semibold text-[#B3B3B3]"
                     >
                       {link.name}
                     </a>
@@ -68,34 +68,50 @@ const Footer = () => {
           ))}
 
           {/* Contact Info */}
-          <div className="border-t border-gray-800">
+          <div className=" lg:w-fit border-t border-gray-800">
             <div className="flex flex-col justify-between">
-              <h3 className="text-white text-2xl font-bold leading-10 mb-4">
+              <h3 className="text-white text-base md:text-2xl font-bold leading-5 md:leading-10 mb-5">
                 Contact Us
               </h3>
-              <div className="flex space-x-5">
+              <div className="flex gap-4 md:gap-5">
                 <a href="#" className="hover:text-white">
-                  <img src="/images/Footer/Facebook.png" alt="fb" />
+                  <img
+                    src="/images/Footer/Facebook.png"
+                    alt="fb"
+                    className="h-4 md:h-full"
+                  />
                 </a>
                 <a href="#" className="hover:text-white">
-                  <img src="/images/Footer/twitter.png" alt="fb" />
+                  <img
+                    src="/images/Footer/twitter.png"
+                    alt="tw"
+                    className="h-4 md:h-full"
+                  />
                 </a>
                 <a href="#" className="hover:text-white">
-                  <img src="/images/Footer/Instagram.png" alt="fb" />
+                  <img
+                    src="/images/Footer/Instagram.png"
+                    alt="in"
+                    className="h-4 md:h-full"
+                  />
                 </a>
                 <a href="#" className="hover:text-white">
-                  <img src="/images/Footer/LinkedIn.png" alt="fb" />
+                  <img
+                    src="/images/Footer/LinkedIn.png"
+                    alt="li"
+                    className="h-4 md:h-full"
+                  />
                 </a>
               </div>
-              <div className="text-xl text-[#B3B3B3] font-semibold leading-9 mt-[26px] md:mb-0">
-                <p>admin@headhuntable.io</p>
+              <div className="text-sm md:text-xl leading-7 md:leading-10 font-semibold text-[#B3B3B3] mt-[10px] md:mt-[26px] md:mb-0">
+                <p className="break-words">admin@headhuntable.io</p>
                 <p>201 W 5th St, Austin, TX 78701</p>
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="mt-8 bg-[#242424] text-center py-6 text-xl leading-9 font-medium text-[#B3B3B3]">
+      <div className=" bg-[#242424] border-t border-t-[#B3B3B3] text-center py-4 sm:py-6 text-[16px] sm:text-xl sm:leading-9 font-medium text-[#B3B3B3]">
         <p>HeadHuntable. All Rights Reserved. 2023</p>
       </div>
     </footer>
